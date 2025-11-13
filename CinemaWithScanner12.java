@@ -26,7 +26,7 @@ public class CinemaWithScanner12 {
             if (next.equalsIgnoreCase("n")){
                 break;
             }
-
         }
+        sc.close();
     }
 }
