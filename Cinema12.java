@@ -1,9 +1,8 @@
 public class Cinema12 {
     public static void main(String[] args) {
-        // 4 rows, 2 columns
+
         String[][] audience = new String[4][2];
 
-        // Fill elements
         audience[0][0] = "Amin";
         audience[0][1] = "Bena";
         audience[1][0] = "Candra";
@@ -19,9 +18,8 @@ public class Cinema12 {
         System.out.printf("%s \t %s\n", audience[2][0], audience[2][1]);
         System.out.printf("%s \t %s\n", audience[3][0], audience[3][1]);
 
-        System.out.println(audience.length);
-            for (int i = 0; i < audience.length; i++) {
-                System.out.println("Lenght of row " + i + " : " + audience[i].length);
+        for (String[] rowAudience : audience) {
+            System.out.println("Lenght of row: " + rowAudience.length);
         }
 
     }
