@@ -22,10 +22,8 @@ public class Cinema12 {
             System.out.println("Lenght of row: " + rowAudience.length);
         }
 
-
-        System.out.println("Audience is in the row 3: ");
-        for (String i : audience[2]) {
-            System.out.println(i);
+        for (int i = 0; i < audience.length; i++) {
+            System.out.println("Audience in the row: " + (i + 1) + " " + String.join(",", audience[i]));
         }
         
     }
